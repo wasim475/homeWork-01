@@ -67,7 +67,7 @@ const fs = require("fs/promises");
   const appendBannerToHTML = async (message) => {
     const bannerHTML = `
 <div class="banner" style="background-color: #FFA500; color: white; padding: 20px; text-align: center; font-size: 20px;">
-  ${message || "Welcome to our site!"}
+  ${message || "Welcome to Node JS!"}
 </div>`;
     await appendToBody(bannerHTML);
     console.log(`Banner added to ${indexPath} with message: "${message}"`);
